@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  grubbrrdocker:
+    image: ${DOCKER_REGISTRY-}grubbrrdocker
+    build:
+      context: .\GrubbrrDocker
+      dockerfile: Dockerfile
